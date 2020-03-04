@@ -4,28 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
-    private Animator anim;
-    private Rigidbody2D myRigidbody;
+    public bool canMove;
     public Vector2 lastMove;
-
-    private bool playerMoving;
-    public float moveSpeed;
-    private float currentMoveSpeed;
-    public float diagonalMoveModifier;
-
-    private static bool playerExists;
-
-    
-    private bool fishing;
-
-    private bool attacking;
     public float attackTime;
-    private float attackTimeCounter;
-
+    public float moveSpeed;
+    public float diagonalMoveModifier;
     public string startPoint;
 
-    public bool canMove;
+    private bool playerMoving;
+    private float currentMoveSpeed;
+    private static bool playerExists;
+    private bool attacking;
+    private Animator anim;
+    private Rigidbody2D myRigidbody;
+    private float attackTimeCounter;
 
     // Start is called before the first frame update
     void Start()
